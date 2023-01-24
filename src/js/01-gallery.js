@@ -5,7 +5,7 @@ import { galleryItems } from './gallery-items';
 // Change code below this line
 
 const galleryElement = document.querySelector('.gallery');
-
+console.log(galleryElement);
 const galleryMarkupArrey = ({ preview, original, description }) =>
     `<li>
     <a class="gallery__item" href="${original}">
