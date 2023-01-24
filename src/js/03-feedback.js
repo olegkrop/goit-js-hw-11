@@ -15,6 +15,7 @@ refs.form.addEventListener('input', throttle(onTextareaInput, 500));
 refs.form.addEventListener('submit', onFormSubmit)
 
 function onFormSubmit(event) {
+    console.log(formData);
     event.preventDefault();
     event.currentTarget.reset();
     localStorage.removeItem(LOCAL_STORAGE_KEY);
@@ -23,8 +24,8 @@ function onFormSubmit(event) {
 
 function onTextareaInput(event) {
     formData[event.target.name] = event.target.value;
-    const stringifiedData = JSON.stringify(formData);
-    localStorage.setItem(LOCAL_STORAGE_KEY, stringifiedData);
+    const formDataString = JSON.stringify(formData);
+    localStorage.setItem(LOCAL_STORAGE_KEY, formDataString);
 }
 
 function populateTextarea() {
