@@ -1,9 +1,10 @@
 function smoothScroll() {
   const { height: cardHeight } = document
-    .querySelector('.gallery')
+    .querySelector('.gallery__link')
     .firstElementChild.getBoundingClientRect();
+
   window.scrollBy({
-    top: cardHeight * 2,
+    top: cardHeight * 3,
     behavior: 'smooth',
   });
 }

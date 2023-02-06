@@ -55,7 +55,6 @@ async function onSubmit(event) {
 
 async function onLoadMoreClick() {
   page += 1;
-
   try {
     const response = await fetchPixabay(input, page);
     const totalPages = response.data.totalHits / 40;
