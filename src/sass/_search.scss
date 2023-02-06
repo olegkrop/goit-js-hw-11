@@ -42,33 +42,6 @@ button[type='submit'] {
   cursor: pointer;
 }
 
-.gallery .container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.gallery__link {
-  width: calc((100% - 60px) / 4);
-  margin-right: 20px;
-  margin-bottom: 20px;
-
-  &:nth-child(4n) {
-    margin-right: 0;
-  }
-
-  text-decoration: none;
-  color: inherit;
-
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-  background-color: rgb(255, 255, 255);
-  transition: all 200ms;
-
-  &:hover {
-    box-shadow: 0px 0px 51px -5px rgba(0, 0, 0, 0.75);
-    transform: scale(1.005);
-  }
-}
-
 .load-more {
   cursor: pointer;
   display: block;

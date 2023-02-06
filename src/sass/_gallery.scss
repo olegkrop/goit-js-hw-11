@@ -9,19 +9,23 @@ $shadow-card: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 80px;
-  gap: $gap;
   padding: $gap 0;
 }
+.gallery .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+}
 
-.photo-card {
+.gallery__link {
   display: flex;
   flex-direction: column;
-
+  text-decoration: none;
   width: $width-img;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: $shadow-card;
-
+  color: black;
   transform: scale(1);
   transition: transform 250ms linear;
   &:hover,
@@ -55,7 +59,6 @@ $shadow-card: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 .info__title {
   display: block;
   width: 100%;
-  font-weight: 700;
   text-align: center;
 }
 
